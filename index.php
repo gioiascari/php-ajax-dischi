@@ -62,9 +62,9 @@
                 </div>
 
                <div class="card-text d-flex flex-column" >
-               <h1 class="font_size"> <?php echo $detail['author'];?></h1>
+               <h1 class="font_size"> <?php echo $detail['title'];?></h1>
                 
-                <p> <?php echo $detail['title'];?></p>
+                <p> <?php echo $detail['author'];?></p>
                </div>
                 </div>
                 
