@@ -30,18 +30,27 @@
     <header>
         <div class="container-fluid">
             <div class="row ">
-                <div class="col-12">
+                <div class="col-12 d-flex justify-content-between">
                     <div class="logo-img w-50 p-2">
                     <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png" alt="" class="w-25">
                     </div>
+                    <select>
+            <option value="">All</option>
+            <option value="Rock">Rock</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Metal">Metal</option>
+            <option value="Pop">Pop</option>
+          </select>
                 </div>
             </div>
         </div>
         
     </header>
     <main>
+        
         <div class="container padding_top">
             <div class="row g-2">
+  
                 
                       <?php 
                 include('data.php');
