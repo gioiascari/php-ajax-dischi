@@ -98,6 +98,6 @@
 
             ],
         ];
-    // header('Content-Type:application/json');
-    // echo json_encode($dbDischi);
+    header('Content-Type:application/json');
+    echo json_encode($dbDischi);
 ?>

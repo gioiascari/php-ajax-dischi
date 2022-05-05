@@ -22,9 +22,11 @@
     <!-- Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- /Vue -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <title>PHP Dischi</title>
 </head>
 <body>
+    <div id="app">
     <header>
         <div class="container-fluid">
             <div class="row ">
@@ -39,17 +41,26 @@
     </header>
     <main>
         <div class="container padding_top">
-            <div class="row">
+            <div class="row g-2">
                 
                       <?php 
                 include('data.php');
                      foreach($dbDischi as $dischi=>$detail){?>
-            <div class="img_container col-3">
+            <div class="img_container col-3 d-flex justify-content-center flex-wrap">
+                <div class="card">
+                <div class="card-img">
                 <img src="<?php echo $detail['poster'];?>" class="w-100 ">
-                    <h1 class="font_size"> <?php echo $detail['author'];?></h1>
-                 <div class="text_card">
-                    <p> <?php echo $detail['title'];?></p>
                 </div>
+
+               <div class="card-text d-flex flex-column" >
+               <h1 class="font_size"> <?php echo $detail['author'];?></h1>
+                
+                <p> <?php echo $detail['title'];?></p>
+               </div>
+                </div>
+                
+                    
+                
 
             </div>
 
@@ -63,7 +74,7 @@
         </div>
     
     </main>
-
+    </div>
  <script src="js/main.js"></script>
 </body>
 </html>
